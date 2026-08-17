@@ -1,0 +1,191 @@
+Yes — **absolutely showcase all 3**, but I would **not present them as “three effects.”** That makes them sound like gimmicks.
+
+Your real differentiator is that these are **interactive experiences that help dental practices communicate results and build trust.**
+
+### I’d structure the landing page like this
+
+**Hero**
+
+> Digital experiences for dental practices.
+
+Then, fairly early in the page:
+
+### “See what your patients can experience.”
+
+Use a dedicated interactive section with the three experiences displayed as **large, immersive demos**.
+
+**1. Before / After**
+The obvious flagship interaction. Make this the largest one.
+
+**2. Your second interaction**
+Show it as another interactive card/demo rather than just a screenshot.
+
+**3. Your third interaction**
+Same treatment.
+
+The important part: **let visitors actually interact with them.** Don't make the section a gallery of GIFs or screenshots.
+
+---
+
+### Why I think this is especially important for your site
+
+Your hero currently says:
+
+> *“We design websites…”*
+
+That's a fairly common agency claim.
+
+But if, immediately afterward, someone can physically drag a slider and experience something polished, you've **demonstrated the claim rather than explained it**.
+
+That's much more premium.
+
+I'd actually make the section feel almost like a product showcase:
+
+**INTERACTIVE EXPERIENCES**
+
+# Not just a website.
+
+# An experience patients can feel.
+
+Then:
+
+**Before / After**
+*Let patients visualize the difference.*
+
+[large interactive demo]
+
+And underneath/alongside:
+
+**Experience 02** | **Experience 03**
+
+---
+
+### One important design decision
+
+Don't put all three in equal-sized cards.
+
+I'd do:
+
+```text
+                 INTERACTIVE EXPERIENCES
+
+        See what your patients can experience.
+
+┌──────────────────────────────────────────────────────┐
+│                                                      │
+│              BEFORE / AFTER                          │
+│                                                      │
+│        ←────── drag to reveal ──────→               │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+
+       ┌──────────────────┐   ┌──────────────────┐
+       │   EXPERIENCE 02  │   │   EXPERIENCE 03  │
+       │                  │   │                  │
+       │    interactive   │   │    interactive   │
+       └──────────────────┘   └──────────────────┘
+```
+
+That creates **hierarchy**: the before/after is the recognizable hero interaction, while the other two prove that you have a broader system.
+
+And I'd give this section **more visual richness than the hero**. Your hero should remain elegant and restrained; the interaction section is where you can let the site become more dynamic.
+
+**So yes: make this a major landing-page section, not a small feature buried near the bottom.** It could actually become the section that makes someone think, *“Oh, this isn't another dental web-design agency.”*
+
+
+
+
+
+Yes — **absolutely showcase all 3**, but I would **not present them as “three effects.”** That makes them sound like gimmicks.
+
+Your real differentiator is that these are **interactive experiences that help dental practices communicate results and build trust.**
+
+### I’d structure the landing page like this
+
+**Hero**
+
+> Digital experiences for dental practices.
+
+Then, fairly early in the page:
+
+### “See what your patients can experience.”
+
+Use a dedicated interactive section with the three experiences displayed as **large, immersive demos**.
+
+**1. Before / After**
+The obvious flagship interaction. Make this the largest one.
+
+**2. Your second interaction**
+Show it as another interactive card/demo rather than just a screenshot.
+
+**3. Your third interaction**
+Same treatment.
+
+The important part: **let visitors actually interact with them.** Don't make the section a gallery of GIFs or screenshots.
+
+---
+
+### Why I think this is especially important for your site
+
+Your hero currently says:
+
+> *“We design websites…”*
+
+That's a fairly common agency claim.
+
+But if, immediately afterward, someone can physically drag a slider and experience something polished, you've **demonstrated the claim rather than explained it**.
+
+That's much more premium.
+
+I'd actually make the section feel almost like a product showcase:
+
+**INTERACTIVE EXPERIENCES**
+
+# Not just a website.
+
+# An experience patients can feel.
+
+Then:
+
+**Before / After**
+*Let patients visualize the difference.*
+
+[large interactive demo]
+
+And underneath/alongside:
+
+**Experience 02** | **Experience 03**
+
+---
+
+### One important design decision
+
+Don't put all three in equal-sized cards.
+
+I'd do:
+
+```text
+                 INTERACTIVE EXPERIENCES
+
+        See what your patients can experience.
+
+┌──────────────────────────────────────────────────────┐
+│                                                      │
+│              BEFORE / AFTER                          │
+│                                                      │
+│        ←────── drag to reveal ──────→               │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+
+       ┌──────────────────┐   ┌──────────────────┐
+       │   EXPERIENCE 02  │   │   EXPERIENCE 03  │
+       │                  │   │                  │
+       │    interactive   │   │    interactive   │
+       └──────────────────┘   └──────────────────┘
+```
+
+That creates **hierarchy**: the before/after is the recognizable hero interaction, while the other two prove that you have a broader system.
+
+And I'd give this section **more visual richness than the hero**. Your hero should remain elegant and restrained; the interaction section is where you can let the site become more dynamic.
+
+**So yes: make this a major landing-page section, not a small feature buried near the bottom.** It could actually become the section that makes someone think, *“Oh, this isn't another dental web-design agency.”*
