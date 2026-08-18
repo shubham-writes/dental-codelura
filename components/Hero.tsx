@@ -105,7 +105,7 @@ export default function Hero() {
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-light text-zinc-300 leading-[1.1] tracking-tight mb-6">
-            Digital experiences for
+            <span className="font-bold">Digital experiences for</span>
             <br />
             <span className="relative inline-block mt-2">
               <span 
@@ -128,16 +128,16 @@ export default function Hero() {
               onClick={() => setShowModal(true)}
               className="group flex items-center gap-3 px-8 py-4 bg-gold text-[#05050a] font-medium tracking-wide rounded-full hover:bg-gold-hover transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-gold/20"
             >
-              <span className="w-5 h-5 rounded-full bg-black/20 flex items-center justify-center">
+              <span className="w-5 h-5 rounded-full bg-black/20 flex items-center justify-center shrink-0">
                 <svg width="10" height="12" viewBox="0 0 10 12" fill="currentColor" className="translate-x-[1px]">
                   <path d="M0 0l10 6-10 6z" />
                 </svg>
               </span>
-              See a 45-second example
+              <span className="whitespace-nowrap">See a 45-second example</span>
             </button>
             <a
               href="#work"
-              className="flex items-center gap-2 px-8 py-4 border border-white/10 text-zinc-400 hover:text-zinc-200 hover:border-white/20 tracking-wide rounded-full transition-all duration-200"
+              className="flex items-center gap-2 px-8 py-4 border border-white/10 text-zinc-400 hover:text-zinc-200 hover:border-white/20 tracking-wide rounded-full transition-all duration-200 whitespace-nowrap"
             >
               View our work
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -158,15 +158,15 @@ export default function Hero() {
         <div className="absolute bottom-0 left-0 right-0 z-10 border-t border-white/[0.12] backdrop-blur-2xl"
           style={{ background: "rgba(19, 19, 19, 0.697)" }}
         >
-          <div className="max-w-4xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-16">
+          <div className="max-w-4xl mx-auto px-4 py-4 sm:py-5 grid grid-cols-3 sm:flex sm:flex-row items-start sm:items-center justify-center gap-2 sm:gap-16">
             {[
-              { value: "12+", label: "Practices redesigned" },
-              { value: "UK & US", label: "Markets served" },
-              { value: "AI included", label: "In every concept" },
+              { value: "12+", label: "Practices\nredesigned" },
+              { value: "UK & US", label: "Markets\nserved" },
+              { value: "AI included", label: "In every\nconcept" },
             ].map((stat) => (
-              <div key={stat.value} className="flex flex-col items-center gap-1">
-                <span className="text-gold text-lg font-light tracking-wide">{stat.value}</span>
-                <span className="text-zinc-500 text-xs tracking-widest uppercase">{stat.label}</span>
+              <div key={stat.value} className="flex flex-col items-center gap-1 text-center">
+                <span className="text-gold text-sm sm:text-lg font-light tracking-wide">{stat.value}</span>
+                <span className="text-zinc-500 text-[9px] sm:text-xs tracking-widest uppercase whitespace-pre-line leading-tight">{stat.label}</span>
               </div>
             ))}
           </div>
