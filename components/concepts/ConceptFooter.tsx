@@ -89,7 +89,7 @@ export default function ConceptFooter({
           <p className={`text-xs ${mutedColor}`}>
             © {new Date().getFullYear()} {clinicName}. All rights reserved.
           </p>
-          {/* Codelura credit — subtle but visible */}
+          {/* Codelura credit - subtle but visible */}
           <a
             href="/"
             className="flex items-center gap-2 text-xs tracking-wide opacity-50 hover:opacity-100 transition-opacity duration-200"

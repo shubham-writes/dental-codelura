@@ -24,7 +24,7 @@ export default function ContactSection() {
           <span className="text-[#d9b665] italic font-extralight">could look like.</span>
         </h2>
         <p className="text-white/45 text-base leading-relaxed mb-12 max-w-lg mx-auto">
-          Send us your website and we&apos;ll put together a concept. No pitch call. No obligation. Just a working demo — in 48 hours.
+          Send us your website and we&apos;ll put together a concept. No pitch call. No obligation. Just a working demo - in 48 hours.
         </p>
 
         {submitted ? (
@@ -32,7 +32,7 @@ export default function ContactSection() {
             <svg className="w-8 h-8 text-[#d9b665] mb-4 animate-bounce" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <h3 className="text-white text-xl font-light mb-2">Got it — thank you!</h3>
+            <h3 className="text-white text-xl font-light mb-2">Got it - thank you!</h3>
             <p className="text-white/50 text-sm">We&apos;ll review your site and reach out within 24 hours.</p>
           </div>
         ) : (
@@ -58,7 +58,7 @@ export default function ContactSection() {
               type="submit"
               className="w-full py-4 bg-[#d9b665] text-[#05050a] font-medium tracking-wide rounded-xl hover:bg-[#e0c483] transition-all duration-200 hover:scale-[1.01] shadow-lg shadow-[#d9b665]/20"
             >
-              Request a free concept →
+              Request a free concept ->
             </button>
           </form>
         )}

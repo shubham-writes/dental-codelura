@@ -118,7 +118,7 @@ export default function Hero() {
 
           {/* Sub-headline */}
           <p className="text-zinc-500 text-base sm:text-xl font-light max-w-2xl mx-auto leading-relaxed mb-8 sm:mb-12">
-            We design websites that build trust before a patient ever calls —
+            We design websites that build trust before a patient ever calls -
             and keep them engaged long after hours with an AI front desk.
           </p>
 

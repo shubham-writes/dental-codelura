@@ -43,7 +43,9 @@ export default function ConceptChatbot({
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (messages.length > 1 || isLoading) {
+      messagesEndRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
   }, [messages, isLoading]);
 
   async function handleSend() {
@@ -133,7 +135,7 @@ export default function ConceptChatbot({
                 </div>
                 <div>
                   <h4 className={`font-light tracking-wide ${textColor}`}>AI Front Desk</h4>
-                  <p className={`text-xs tracking-widest mt-0.5 ${mutedColor}`}>ONLINE — Ask me anything</p>
+                  <p className={`text-xs tracking-widest mt-0.5 ${mutedColor}`}>ONLINE - Ask me anything</p>
                 </div>
               </div>
 

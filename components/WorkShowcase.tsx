@@ -16,7 +16,7 @@ export default function WorkShowcase() {
       slug: "northbridge",
       name: "Northbridge Dental",
       location: "London, UK",
-      tagline: "Premium cosmetic practice — elevated from generic to luxury with AI front desk and veneers-first flow.",
+      tagline: "Premium cosmetic practice - elevated from generic to luxury with AI front desk and veneers-first flow.",
       style: "light",
       accentColor: "#c9a84c",
     },
@@ -25,7 +25,7 @@ export default function WorkShowcase() {
       slug: "riverside",
       name: "Riverside Dental",
       location: "Bristol, UK",
-      tagline: "Family practice transformed — warm, approachable, with 24/7 AI for after-hours patient enquiries.",
+      tagline: "Family practice transformed - warm, approachable, with 24/7 AI for after-hours patient enquiries.",
       style: "dark",
       accentColor: "#2d5a4e",
     },
@@ -41,7 +41,7 @@ export default function WorkShowcase() {
             Dental website concepts we&apos;ve designed
           </h2>
           <p className="text-zinc-500 mt-4 max-w-xl mx-auto text-base">
-            Exploring better digital experiences for modern dental practices — built to show what&apos;s possible,
+            Exploring better digital experiences for modern dental practices - built to show what&apos;s possible,
             not to claim delivery.
           </p>
         </div>
@@ -76,20 +76,16 @@ function WorkCard({ example, reverse }: { example: any; reverse: boolean }) {
           </div>
         </div>
 
-        {/* Placeholder preview with accent */}
-        <div className="absolute inset-0 mt-8 flex flex-col items-center justify-center gap-3">
-          <div
-            className="w-10 h-10 rounded-full opacity-30 flex items-center justify-center"
-            style={{ backgroundColor: example.accentColor }}
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5">
-              <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
-            </svg>
-          </div>
-          <span className="text-white/20 text-sm">{example.name} — full concept inside</span>
+        {/* Thumbnail Image */}
+        <div className="absolute inset-0 mt-8">
+          <img 
+            src={`/${example.slug}_screenshot.png`} 
+            alt={`${example.name} preview`} 
+            className="w-full h-full object-cover object-top opacity-70 group-hover:opacity-40 transition-opacity duration-300"
+          />
         </div>
 
-        {/* Hover overlay — View Concept CTA */}
+        {/* Hover overlay - View Concept CTA */}
         <a
           href={`/concepts/${example.slug}`}
           className="absolute inset-0 mt-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"

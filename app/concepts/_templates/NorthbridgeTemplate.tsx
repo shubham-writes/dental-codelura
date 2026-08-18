@@ -59,14 +59,14 @@ export default function NorthbridgeTemplate() {
             <div className="absolute inset-0 bg-gradient-to-r from-[#0e1a2e]/80 via-[#0e1a2e]/40 to-transparent" />
           </div>
 
-          {/* Left: Typography — shifted right for balance, content occupies 55% */}
+          {/* Left: Typography - shifted right for balance, content occupies 55% */}
           <div className="w-full lg:w-[55%] flex flex-col justify-center relative z-10
                           px-8 sm:px-16 lg:pl-16 xl:pl-20 lg:pr-6
                           pt-20 pb-16 lg:pt-0 lg:pb-0">
             {/* Eyebrow */}
             <p className="text-[10px] tracking-[0.4em] uppercase mb-5 font-semibold text-[#c9a84c]">London, UK · Harley Street</p>
 
-            {/* Headline — the money shot */}
+            {/* Headline - the money shot */}
             <h1 className="font-playfair text-5xl sm:text-7xl lg:text-6xl xl:text-[5.5rem] 2xl:text-8xl leading-[0.95] tracking-tight mb-7 text-white font-bold">
               Smile<br />
               makeovers.<br />
@@ -76,12 +76,12 @@ export default function NorthbridgeTemplate() {
               </span>
             </h1>
 
-            {/* Supporting copy — narrower, smaller, quieter */}
+            {/* Supporting copy - narrower, smaller, quieter */}
             <p className="max-w-[300px] text-sm leading-relaxed text-white/60 mb-9 font-light">
               {northbridgeHero.subTagline}
             </p>
 
-            {/* CTA — editorial, not SaaS */}
+            {/* CTA - editorial, not SaaS */}
             <div>
               <a
                 href="#contact"
@@ -92,7 +92,7 @@ export default function NorthbridgeTemplate() {
             </div>
           </div>
 
-          {/* Right: Empty — video fills this space fully, keeping it luminous */}
+          {/* Right: Empty - video fills this space fully, keeping it luminous */}
           <div className="w-full lg:w-[45%] h-[38vh] lg:h-auto relative z-10" />
         </section>
 

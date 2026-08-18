@@ -7,7 +7,7 @@ const TREATMENTS = [
     label: "Gaps & crooked teeth",
     title: "Invisalign",
     description: "A discreet approach to improving tooth alignment and spacing.",
-    timeline: "6–18 months",
+    timeline: "6-18 months",
     match: "AI MATCHED"
   },
   {
@@ -23,7 +23,7 @@ const TREATMENTS = [
     label: "Missing teeth",
     title: "Dental Implants",
     description: "A permanent, natural-looking foundation for replacing missing teeth.",
-    timeline: "3–6 months",
+    timeline: "3-6 months",
     match: "AI MATCHED"
   },
   {
@@ -31,7 +31,7 @@ const TREATMENTS = [
     label: "Chipped / worn teeth",
     title: "Porcelain Veneers",
     description: "Handcrafted porcelain shells that restore the natural shape and strength of your teeth.",
-    timeline: "2–3 weeks",
+    timeline: "2-3 weeks",
     match: "AI MATCHED"
   }
 ];

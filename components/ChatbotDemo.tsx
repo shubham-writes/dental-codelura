@@ -29,7 +29,9 @@ export default function ChatbotDemo() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (messages.length > 1 || isLoading) {
+      messagesEndRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
   }, [messages, isLoading]);
 
   async function handleSend() {
@@ -54,7 +56,7 @@ export default function ChatbotDemo() {
     } catch {
       setMessages((p) => [
         ...p,
-        { role: "assistant", content: "Something went wrong — please try again!" },
+        { role: "assistant", content: "Something went wrong - please try again!" },
       ]);
     } finally {
       setIsLoading(false);
@@ -79,7 +81,7 @@ export default function ChatbotDemo() {
               <span className="font-extralight italic" style={{ color: accentColor }}>even after hours.</span>
             </h2>
             <p className={`text-base leading-relaxed ${mutedColor}`}>
-              Our AI assistant answers patient questions instantly — day or night. No voicemail, no waiting.
+              Our AI assistant answers patient questions instantly - day or night. No voicemail, no waiting.
             </p>
             <div className="flex flex-col gap-4 mt-2">
               {[
@@ -149,7 +151,7 @@ export default function ChatbotDemo() {
                 </div>
                 <div>
                   <h4 className={`font-light tracking-wide ${textColor}`}>AI Front Desk</h4>
-                  <p className={`text-xs tracking-widest mt-0.5 ${mutedColor}`}>ONLINE — Ask me anything</p>
+                  <p className={`text-xs tracking-widest mt-0.5 ${mutedColor}`}>ONLINE - Ask me anything</p>
                 </div>
               </div>
 

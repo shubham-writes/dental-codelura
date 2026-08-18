@@ -6,7 +6,7 @@ const signals = [
       </svg>
     ),
     title: "Built with modern technology",
-    desc: "The same stack used by high-growth UK startups — Next.js, Vercel, and enterprise-grade AI APIs.",
+    desc: "The same stack used by high-growth UK startups - Next.js, Vercel, and enterprise-grade AI APIs.",
   },
   {
     icon: (
@@ -34,7 +34,7 @@ const signals = [
       </svg>
     ),
     title: "48-hour turnaround",
-    desc: "From your first message to a fully working live demo — in two days, not two weeks.",
+    desc: "From your first message to a fully working live demo - in two days, not two weeks.",
   },
 ];
 
