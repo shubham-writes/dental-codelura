@@ -61,13 +61,13 @@ export default function NorthbridgeTemplate() {
 
           {/* Left: Typography - shifted right for balance, content occupies 55% */}
           <div className="w-full lg:w-[55%] flex flex-col justify-center relative z-10
-                          px-8 sm:px-16 lg:pl-16 xl:pl-20 lg:pr-6
+                          px-6 sm:px-16 lg:pl-16 xl:pl-20 lg:pr-6
                           pt-20 pb-16 lg:pt-0 lg:pb-0">
             {/* Eyebrow */}
             <p className="text-[10px] tracking-[0.4em] uppercase mb-5 font-semibold text-[#c9a84c]">London, UK · Harley Street</p>
 
             {/* Headline - the money shot */}
-            <h1 className="font-playfair text-5xl sm:text-7xl lg:text-6xl xl:text-[5.5rem] 2xl:text-8xl leading-[0.95] tracking-tight mb-7 text-white font-bold">
+            <h1 className="font-playfair text-[2.5rem] sm:text-6xl lg:text-6xl xl:text-[5.5rem] 2xl:text-8xl leading-[0.95] tracking-tight mb-7 text-white font-bold">
               Smile<br />
               makeovers.<br />
               <span className="italic text-[#b0b8c4] font-normal">

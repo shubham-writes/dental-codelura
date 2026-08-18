@@ -60,7 +60,7 @@ export default function WorkShowcase() {
 function WorkCard({ example, reverse }: { example: any; reverse: boolean }) {
   return (
     <div
-      className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-8 items-center rounded-2xl border border-white/8 bg-white/[0.02] p-6 lg:p-10`}
+      className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-6 lg:gap-8 items-center rounded-2xl border border-white/8 bg-white/[0.02] p-4 sm:p-6 lg:p-10`}
     >
       {/* Preview panel */}
       <div className="w-full lg:w-3/5 aspect-[16/10] rounded-xl overflow-hidden relative bg-white/5 border border-white/10 group">

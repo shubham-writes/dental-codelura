@@ -60,12 +60,12 @@ export default function BeforeAfterSlider({
     <div className={`w-full flex flex-col ${caseData ? "" : "pt-6"}`}>
       {/* Tabs */}
       {!caseData && (
-        <div className="flex flex-wrap justify-center gap-2 mb-6 px-4">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-6 px-2 sm:px-4">
           {CASES.map((c) => (
             <button
               key={c.id}
               onClick={() => setActiveCaseId(c.id)}
-              className={`px-4 py-2 rounded-full text-xs font-semibold tracking-wide uppercase transition-all duration-300 ${
+              className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-[10px] sm:text-xs font-semibold tracking-wide uppercase transition-all duration-300 ${
                 activeCaseId === c.id
                   ? "text-white shadow-md"
                   : "bg-transparent text-current opacity-60 hover:opacity-100"
