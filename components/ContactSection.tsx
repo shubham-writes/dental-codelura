@@ -58,7 +58,7 @@ export default function ContactSection() {
               type="submit"
               className="w-full py-4 bg-[#d9b665] text-[#05050a] font-medium tracking-wide rounded-xl hover:bg-[#e0c483] transition-all duration-200 hover:scale-[1.01] shadow-lg shadow-[#d9b665]/20"
             >
-              Request a free concept ->
+              Request a free concept &rarr;
             </button>
           </form>
         )}
