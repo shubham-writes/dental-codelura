@@ -1,11 +1,9 @@
 import React from "react";
-import dynamic from "next/dynamic";
+import ConceptFloatingChatbot from "@/components/concepts/ConceptFloatingChatbot";
 import BackToTopButton from "@/components/BackToTopButton";
+import ConceptMagneticReviews from "@/components/concepts/ConceptMagneticReviews";
 import BeforeAfterSlider from "@/components/experiences/BeforeAfterSlider";
 import { northbridgeTheme, northbridgeHero, northbridgeServices, northbridgeTrust, northbridgeTestimonials } from "../_data/northbridge";
-
-const ConceptFloatingChatbot = dynamic(() => import("@/components/concepts/ConceptFloatingChatbot"), { ssr: false });
-const ConceptMagneticReviews = dynamic(() => import("@/components/concepts/ConceptMagneticReviews"), { ssr: true });
 
 export default function NorthbridgeTemplate() {
   const theme = northbridgeTheme;
@@ -52,7 +50,7 @@ export default function NorthbridgeTemplate() {
           {/* Background Demo Video */}
           <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden bg-[#0e1a2e]">
             <video
-              src="https://res.cloudinary.com/xovi1jzh/video/upload/q_auto,f_auto/v1785749441/video_high_jfsypo.mp4"
+              src="https://res.cloudinary.com/xovi1jzh/video/upload/v1787148125/heroVideo_opt_ncqoxi.webm"
               poster="https://res.cloudinary.com/xovi1jzh/image/upload/q_auto,f_auto,w_1920/v1787147626/poster_northbridge_pm440l.webp"
               autoPlay
               muted

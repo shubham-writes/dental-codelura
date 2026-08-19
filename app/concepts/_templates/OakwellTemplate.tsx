@@ -52,7 +52,8 @@ export default function OakwellTemplate() {
       >
         <div className="absolute inset-0 z-0">
           <video
-            src="https://res.cloudinary.com/xovi1jzh/video/upload/v1785749441/video_high_jfsypo.mp4"
+            src="https://res.cloudinary.com/xovi1jzh/video/upload/v1787148125/heroVideo_opt_ncqoxi.webm"
+            poster="https://res.cloudinary.com/xovi1jzh/image/upload/v1787147626/poster_northbridge_pm440l.webp"
             autoPlay
             muted
             loop
