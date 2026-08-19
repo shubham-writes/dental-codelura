@@ -60,10 +60,10 @@ export default function WorkShowcase() {
 function WorkCard({ example, reverse }: { example: any; reverse: boolean }) {
   return (
     <div
-      className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-6 lg:gap-8 items-center rounded-2xl border border-white/8 bg-white/[0.02] p-4 sm:p-6 lg:p-10`}
+      className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-0 lg:gap-8 items-center rounded-2xl border border-white/8 bg-white/2 overflow-hidden lg:overflow-visible p-0 lg:p-10`}
     >
       {/* Preview panel */}
-      <div className="w-full lg:w-3/5 aspect-[16/10] rounded-xl overflow-hidden relative bg-white/5 border border-white/10 group">
+      <div className="w-full lg:w-3/5 aspect-16/10 lg:rounded-xl overflow-hidden relative bg-white/5 border-b lg:border border-white/10 group">
         {/* Browser chrome */}
         <div className="absolute top-0 left-0 right-0 h-8 bg-white/5 border-b border-white/10 flex items-center px-3 gap-2 z-10">
           <div className="flex gap-1.5">
@@ -78,9 +78,9 @@ function WorkCard({ example, reverse }: { example: any; reverse: boolean }) {
 
         {/* Thumbnail Image */}
         <div className="absolute inset-0 mt-8">
-          <img 
-            src={`/${example.slug}_screenshot.png`} 
-            alt={`${example.name} preview`} 
+          <img
+            src={`/${example.slug}_screenshot.png`}
+            alt={`${example.name} preview`}
             className="w-full h-full object-cover object-top opacity-70 group-hover:opacity-40 transition-opacity duration-300"
           />
         </div>
@@ -97,20 +97,20 @@ function WorkCard({ example, reverse }: { example: any; reverse: boolean }) {
           >
             View Full Concept
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M3 8h10M8 3l5 5-5 5"/>
+              <path d="M3 8h10M8 3l5 5-5 5" />
             </svg>
           </span>
         </a>
 
         {/* Color accent bar at bottom */}
         <div
-          className="absolute bottom-0 left-0 right-0 h-[3px]"
+          className="absolute bottom-0 left-0 right-0 h-0.75"
           style={{ backgroundColor: example.accentColor }}
         />
       </div>
 
       {/* Text */}
-      <div className="w-full lg:w-2/5">
+      <div className="w-full lg:w-2/5 p-6 sm:p-8 lg:p-0">
         {/* Independent concept badge */}
         <span className="inline-flex items-center gap-1.5 text-[10px] tracking-widest uppercase font-medium border border-white/10 rounded-full px-3 py-1 text-white/35 mb-4">
           <span className="w-1.5 h-1.5 rounded-full bg-white/30 inline-block" />
@@ -146,7 +146,7 @@ function WorkCard({ example, reverse }: { example: any; reverse: boolean }) {
         >
           View full concept
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M3 8h10M8 3l5 5-5 5"/>
+            <path d="M3 8h10M8 3l5 5-5 5" />
           </svg>
         </a>
       </div>

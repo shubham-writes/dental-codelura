@@ -59,8 +59,8 @@ export default function TreatmentExplorer() {
   }, [status]);
 
   return (
-    <div className="w-full h-full min-h-[380px] rounded-xl bg-[#0a0a0f] border border-white/10 p-5 sm:p-7 flex flex-col relative overflow-hidden group">
-      
+    <div className="w-full h-full min-h-95 rounded-xl bg-[#0a0a0f] border border-white/10 p-5 sm:p-7 flex flex-col relative overflow-hidden group">
+
       <style>{`
         @keyframes scannerLine {
           0% { transform: translateY(0px); opacity: 0; }
@@ -86,7 +86,7 @@ export default function TreatmentExplorer() {
 
       {/* Background Glow */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-full blur-[80px] -z-10 group-hover:bg-gold/10 transition-colors duration-700" />
-      
+
       <div className="flex items-center justify-between mb-6">
         <h3 className="text-xl sm:text-2xl text-white font-light tracking-tight">AI Treatment Match</h3>
         {status === 'scanning' && (
@@ -106,11 +106,10 @@ export default function TreatmentExplorer() {
               key={t.id}
               onClick={() => handleSelect(t)}
               disabled={status === 'scanning'}
-              className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-300 border ${
-                active.id === t.id && status !== 'idle'
-                  ? "bg-white text-black border-white shadow-lg shadow-white/10" 
-                  : "bg-transparent text-zinc-400 border-white/10 hover:border-white/30 hover:text-white"
-              } disabled:opacity-50 disabled:cursor-not-allowed`}
+              className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-300 border ${active.id === t.id && status !== 'idle'
+                ? "bg-white text-black border-white shadow-lg shadow-white/10"
+                : "bg-transparent text-zinc-400 border-white/10 hover:border-white/30 hover:text-white"
+                } disabled:opacity-50 disabled:cursor-not-allowed`}
             >
               {t.label}
             </button>
@@ -120,23 +119,23 @@ export default function TreatmentExplorer() {
 
       {/* Dynamic Display Area (Height determined by Complete State UI) */}
       <div className="mt-auto relative w-full rounded-xl overflow-hidden border border-white/5 bg-[#05050a]/50 backdrop-blur-md">
-        
+
         {/* Scanning State UI (Absolute overlay) */}
-        <div 
+        <div
           className={`absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-300 ${status === 'scanning' ? 'opacity-100 z-20' : 'opacity-0 z-0 pointer-events-none'}`}
         >
           {/* Grid Background */}
           <div className="absolute inset-0 opacity-[0.15]" style={{ backgroundImage: "linear-gradient(#d6b362 1px, transparent 1px), linear-gradient(90deg, #d6b362 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
-          
+
           {/* Scanner Line */}
-          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gold shadow-[0_0_15px_rgba(217,182,101,0.8)] animate-scanner" />
+          <div className="absolute top-0 left-0 right-0 h-0.5 bg-gold shadow-[0_0_15px_rgba(217,182,101,0.8)] animate-scanner" />
           <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-transparent to-gold/10 animate-scanner -translate-y-full" />
 
           {/* Central Animated Text */}
           <div className="relative z-10 flex flex-col items-center gap-3">
-             <p className="text-[10px] text-gold font-mono tracking-[0.3em] uppercase text-center w-full px-4 drop-shadow-[0_0_8px_rgba(217,182,101,0.5)]">
-               ANALYZING YOUR GOALS
-             </p>
+            <p className="text-[10px] text-gold font-mono tracking-[0.3em] uppercase text-center w-full px-4 drop-shadow-[0_0_8px_rgba(217,182,101,0.5)]">
+              ANALYZING YOUR GOALS
+            </p>
           </div>
 
           {/* Micro Labels (Simulating AI processing points) */}
@@ -156,27 +155,27 @@ export default function TreatmentExplorer() {
         </div>
 
         {/* Complete State UI (Relative, dictates container height) */}
-        <div 
+        <div
           className={`relative p-5 sm:p-6 flex flex-col transition-all duration-500 delay-100 ${status === 'complete' ? 'opacity-100 z-10 translate-y-0 scale-100' : 'opacity-0 z-0 translate-y-4 scale-95 pointer-events-none'}`}
         >
           <div className="flex items-center justify-between mb-3">
             <span className="text-[10px] text-gold font-bold tracking-[0.2em] uppercase">YOUR MATCH</span>
             <span className="text-[9px] font-mono text-zinc-400 bg-white/5 px-2 py-0.5 rounded border border-white/10">{active.match}</span>
           </div>
-          
+
           <h4 className="text-xl text-white font-medium mb-1 truncate">{active.title}</h4>
           <p className="text-xs text-zinc-400 leading-relaxed mb-3 line-clamp-2">{active.description}</p>
-          
+
           <div className="flex flex-col gap-0.5 mb-4">
             <span className="text-[9px] text-zinc-500 uppercase tracking-widest font-semibold">Typical timeline</span>
             <span className="text-xs font-mono text-zinc-300">{active.timeline}</span>
           </div>
-          
+
           <div className="mt-auto flex items-center justify-between border-t border-white/5 pt-4">
             <span className="text-[10px] text-zinc-400 hidden sm:block">Want to know if you're a candidate?</span>
             <button className="text-[10px] font-bold tracking-wider uppercase text-white group flex items-center gap-1.5 transition-colors hover:text-gold sm:ml-auto">
-              Start consultation 
-              <svg className="w-3 h-3 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Start consultation
+              <svg className="w-3 h-3 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </button>
           </div>
         </div>
