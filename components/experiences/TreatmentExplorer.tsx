@@ -88,7 +88,10 @@ export default function TreatmentExplorer() {
       <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-full blur-[80px] -z-10 group-hover:bg-gold/10 transition-colors duration-700" />
 
       <div className="flex items-center justify-between mb-6">
-        <h3 className="text-xl sm:text-2xl text-white font-light tracking-tight">AI Treatment Match</h3>
+        <div>
+          <p className="text-gold text-[10px] tracking-[0.2em] uppercase font-semibold mb-2">Experience 02</p>
+          <h3 className="text-xl sm:text-2xl text-white font-light tracking-tight">AI Treatment Match</h3>
+        </div>
         {status === 'scanning' && (
           <span className="flex items-center gap-1.5 text-[9px] text-gold uppercase tracking-widest font-mono bg-gold/10 px-2 py-0.5 rounded-full border border-gold/20">
             <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
