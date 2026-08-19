@@ -58,7 +58,6 @@ export default function TrustBuilder() {
                 </svg>
               ))}
             </div>
-            <p className="text-gold text-[10px] tracking-[0.2em] uppercase font-semibold mb-2">Experience 03</p>
             <h3 className="text-xl sm:text-2xl text-white font-light tracking-tight mb-3">Live Trust Signals</h3>
             <p className="text-sm text-zinc-300 italic mb-5 leading-relaxed">"The team didn't just build a website, they built a patient-generating engine. Our Invisalign consultations doubled in month one."</p>
             <div className="flex items-center gap-3">

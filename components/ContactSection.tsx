@@ -64,14 +64,14 @@ export default function ContactSection() {
         )}
 
         <p className="text-white/20 text-xs mt-6">
-          Or reach us directly on{" "}
+          Or reach us directly on Instagram{" "}
           <a
-            href="https://instagram.com/codelura"
+            href="https://instagram.com/codelura.dental"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#d9b665]/60 hover:text-[#d9b665] transition-colors"
           >
-            Instagram @codelura
+            @codelura.dental
           </a>
         </p>
       </div>
