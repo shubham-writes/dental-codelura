@@ -1,15 +1,19 @@
 import React from "react";
-import ConceptFloatingChatbot from "@/components/concepts/ConceptFloatingChatbot";
+import dynamic from "next/dynamic";
 import BackToTopButton from "@/components/BackToTopButton";
-import ConceptMagneticReviews from "@/components/concepts/ConceptMagneticReviews";
 import BeforeAfterSlider from "@/components/experiences/BeforeAfterSlider";
 import { northbridgeTheme, northbridgeHero, northbridgeServices, northbridgeTrust, northbridgeTestimonials } from "../_data/northbridge";
+
+const ConceptFloatingChatbot = dynamic(() => import("@/components/concepts/ConceptFloatingChatbot"), { ssr: false });
+const ConceptMagneticReviews = dynamic(() => import("@/components/concepts/ConceptMagneticReviews"), { ssr: true });
 
 export default function NorthbridgeTemplate() {
   const theme = northbridgeTheme;
 
   return (
     <div className="min-h-screen flex selection:bg-black/10 text-[#0e1a2e]" style={{ backgroundColor: theme.bgColor, color: "#0e1a2e" }}>
+      {/* Preload hero video poster to fix LCP */}
+      <link rel="preload" as="image" href="https://res.cloudinary.com/xovi1jzh/image/upload/q_auto,f_auto,w_1920/v1787147626/poster_northbridge_pm440l.webp" fetchPriority="high" />
 
       {/* Sticky Left Sidebar Navigation */}
       <aside className="hidden lg:flex flex-col justify-between w-52 h-screen sticky top-0 border-r py-10 px-6 bg-[#f9f6f1]" style={{ borderColor: theme.borderColor }}>
@@ -43,12 +47,13 @@ export default function NorthbridgeTemplate() {
         </header>
 
         {/* Hero Section: Split Screen */}
-        <section className="min-h-[85vh] lg:min-h-screen flex flex-col lg:flex-row border-b relative overflow-hidden" style={{ borderColor: theme.borderColor }}>
+        <section id="hero" className="min-h-[85vh] lg:min-h-screen flex flex-col lg:flex-row border-b relative overflow-hidden" style={{ borderColor: theme.borderColor }}>
 
           {/* Background Demo Video */}
-          <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+          <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden bg-[#0e1a2e]">
             <video
-              src="https://res.cloudinary.com/xovi1jzh/video/upload/v1785749441/video_high_jfsypo.mp4"
+              src="https://res.cloudinary.com/xovi1jzh/video/upload/q_auto,f_auto/v1785749441/video_high_jfsypo.mp4"
+              poster="https://res.cloudinary.com/xovi1jzh/image/upload/q_auto,f_auto,w_1920/v1787147626/poster_northbridge_pm440l.webp"
               autoPlay
               muted
               loop
