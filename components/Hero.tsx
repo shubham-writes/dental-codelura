@@ -99,15 +99,15 @@ export default function Hero() {
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto my-auto">
           {/* Eyebrow */}
-          <p className="text-gold text-xs tracking-[0.4em] uppercase mb-6 sm:mb-8 opacity-80">
+          <p className="text-gold text-[10px] sm:text-xs tracking-[0.3em] sm:tracking-[0.4em] uppercase mb-5 sm:mb-8 opacity-80">
             Codelura · Dental Division
           </p>
 
           {/* Headline */}
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-light text-zinc-300 leading-[1.1] tracking-tight mb-6">
+          <h1 className="text-[32px] leading-[1.15] sm:text-6xl lg:text-7xl font-light text-zinc-300 sm:leading-[1.1] tracking-tight mb-5 sm:mb-6">
             <span className="font-bold">Digital experiences for</span>
             <br />
-            <span className="relative inline-block mt-2">
+            <span className="relative inline-block mt-1 sm:mt-2">
               <span
                 className="absolute inset-0 bg-gold/10 blur-2xl rounded-full"
                 style={{ animation: 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite' }}
@@ -117,16 +117,16 @@ export default function Hero() {
           </h1>
 
           {/* Sub-headline */}
-          <p className="text-zinc-500 text-base sm:text-xl font-light max-w-2xl mx-auto leading-relaxed mb-8 sm:mb-12">
+          <p className="text-zinc-500 text-sm sm:text-xl font-light max-w-2xl mx-auto leading-relaxed mb-8 sm:mb-12 px-2 sm:px-0">
             We design websites that build trust before a patient ever calls -
             and keep them engaged long after hours with an AI front desk.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto px-4 sm:px-0">
             <button
               onClick={() => setShowModal(true)}
-              className="group flex items-center gap-3 px-8 py-4 bg-gold text-[#05050a] font-medium tracking-wide rounded-full hover:bg-gold-hover transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-gold/20"
+              className="group w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-3.5 sm:px-8 sm:py-4 bg-gold text-[#05050a] text-sm sm:text-base font-medium tracking-wide rounded-full hover:bg-gold-hover transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-gold/20"
             >
               <span className="w-5 h-5 rounded-full bg-black/20 flex items-center justify-center shrink-0">
                 <svg width="10" height="12" viewBox="0 0 10 12" fill="currentColor" className="translate-x-px">
@@ -137,7 +137,7 @@ export default function Hero() {
             </button>
             <a
               href="#work"
-              className="flex items-center gap-2 px-8 py-4 border border-white/10 text-zinc-400 hover:text-zinc-200 hover:border-white/20 tracking-wide rounded-full transition-all duration-200 whitespace-nowrap"
+              className="flex w-full sm:w-auto justify-center items-center gap-2 px-6 py-3.5 sm:px-8 sm:py-4 border border-white/10 text-zinc-400 hover:text-zinc-200 text-sm sm:text-base hover:border-white/20 tracking-wide rounded-full transition-all duration-200 whitespace-nowrap"
             >
               View our work
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">

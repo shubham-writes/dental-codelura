@@ -11,7 +11,7 @@ export default function Navbar() {
 
       {/* Logo */}
       <a href="#" className="relative z-10 flex items-center gap-2 group">
-        <span className="text-xl tracking-[0.12em] uppercase">
+        <span className="text-lg sm:text-xl tracking-[0.12em] uppercase">
           <span className="text-white font-semibold">Code</span>
           <span className="text-gold font-light">lura</span>
         </span>
@@ -40,7 +40,7 @@ export default function Navbar() {
       {/* Mobile CTA */}
       <a
         href="#contact"
-        className="relative z-10 sm:hidden px-4 py-2 border border-gold/50 text-gold text-xs tracking-widest uppercase rounded-full"
+        className="relative z-10 sm:hidden px-3 py-1.5 border border-gold/50 text-gold text-[10px] tracking-widest uppercase rounded-full"
       >
         Get in Touch
       </a>

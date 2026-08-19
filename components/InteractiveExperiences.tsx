@@ -25,10 +25,10 @@ export default function InteractiveExperiences() {
         <div className="flex flex-col gap-5">
           
           {/* Top Large Row */}
-          <div className="w-full bg-[#0a0a0f] rounded-2xl border border-white/10 p-5 sm:p-7 flex flex-col relative overflow-hidden group">
+          <div className="w-full bg-[#0a0a0f] rounded-2xl border border-white/10 pt-5 sm:p-7 flex flex-col relative overflow-hidden group">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-gold/5 rounded-full blur-[100px] -z-10 group-hover:bg-gold/10 transition-colors duration-1000" />
             
-            <div className="mb-6 text-center sm:text-left flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div className="mb-6 px-5 sm:px-0 text-center sm:text-left flex flex-col sm:flex-row sm:items-end justify-between gap-4">
               <div>
                 <p className="text-gold text-[10px] tracking-[0.2em] uppercase font-semibold mb-2">Experience 01</p>
                 <h3 className="text-xl sm:text-2xl text-white font-light tracking-tight mb-1">Transformations</h3>
@@ -40,8 +40,8 @@ export default function InteractiveExperiences() {
               </div>
             </div>
             
-            <div className="w-full max-w-3xl mx-auto rounded-xl overflow-hidden shadow-2xl shadow-black/50 border border-white/10 ring-1 ring-white/5">
-              <BeforeAfterSlider />
+            <div className="w-full max-w-3xl mx-auto sm:rounded-xl sm:overflow-hidden sm:shadow-2xl sm:shadow-black/50 sm:border sm:border-white/10 sm:ring-1 sm:ring-white/5 mt-2 sm:mt-0">
+              <BeforeAfterSlider rounded="rounded-none sm:rounded-xl border-y sm:border border-white/10" />
             </div>
           </div>
 

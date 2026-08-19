@@ -83,7 +83,7 @@ export default function BeforeAfterSlider({
 
       {/* Main Image Container */}
       <div
-        className={`relative w-full aspect-16/10 md:aspect-16/8 ${rounded} overflow-hidden cursor-ew-resize select-none border border-white/10`}
+        className={`relative w-full aspect-16/10 md:aspect-16/8 ${rounded} overflow-hidden cursor-ew-resize select-none`}
         ref={containerRef}
         onMouseDown={(e) => {
           setIsDragging(true);
